@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calculator</h1> <br><br><br>
+    <input style="width:40%" type="number" id="number1">
+    <input style="width:40%" type="number" id="number2">
+    <br><br><br>
+    <button onclick="Addition()">Addition(+)</button>
+    <button onclick="Subtraction()">Subtraction(-)</button>
+    <button onclick="Multiplication()">Multiplication(*)</button>
+    <button onclick="Division()">Division(/)</button>
+
+    <p id="result"></p>
+
+
+
+</body>
+<script>
+
+    console.log(firstNumber)
+    function Addition() {
+        var firstNumber = Number(document.getElementById("number1").value);
+        var secondNumber = Number(document.getElementById("number2").value);
+        var additon = firstNumber + secondNumber;
+        document.getElementById("result").innerHTML = "Result:" + additon;
+    }
+    function Subtraction() {
+        var firstNumber = Number(document.getElementById("number1").value);
+        var secondNumber = Number(document.getElementById("number2").value);
+        var subtraction = firstNumber - secondNumber;
+        document.getElementById("result").innerHTML = "Result:" + subtraction;
+
+    }
+    function Multiplication() {
+        var firstNumber = Number(document.getElementById("number1").value);
+        var secondNumber = Number(document.getElementById("number2").value);
+        var multiplication = firstNumber * secondNumber;
+        document.getElementById("result").innerHTML = "Result:" + multiplication;
+
+    }
+    function Division() {
+        var firstNumber = Number(document.getElementById("number1").value);
+        var secondNumber = Number(document.getElementById("number2").value);
+        var division = firstNumber / secondNumber;
+        document.getElementById("result").innerHTML = "Result:" + division;
+
+    }
+
+</script>
+
+</html>
